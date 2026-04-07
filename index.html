@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata RPL Elite</title>
+    <meta
+      name="description"
+      content="Website biodata bertema Rekayasa Perangkat Lunak dengan tampilan profesional, animasi interaktif, galeri, video, dan banyak fitur."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-core"></div>
+      <p>Booting RPL Elite System...</p>
+    </div>
+
+    <div class="cursor-glow"></div>
+    <canvas class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="grid-overlay"></div>
+
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark">R</div>
+        <div>
+          <p class="eyebrow">Biodata Digital</p>
+          <h1>RPL Elite Profile</h1>
+        </div>
+      </div>
+
+      <nav class="top-nav">
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#kompetensi">Kompetensi</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#media">Media</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Buka navigasi">Menu</button>
+    </header>
+
+    <main>
+      <section class="hero panel reveal" id="beranda">
+        <div class="hero-copy">
+          <p class="eyebrow">Rekayasa Perangkat Lunak</p>
+          <h2 class="glitch-title" data-text="Membangun identitas digital RPL yang modern, elegan, dan terasa profesional.">
+            Membangun identitas digital RPL yang modern, elegan, dan terasa profesional.
+          </h2>
+          <p class="hero-text">
+            Website ini menampilkan biodata siswa RPL dengan gaya premium: banyak tab konten,
+            statistik, roadmap karier, showcase proyek, galeri teknologi, video edukatif, dan
+            animasi interaktif yang membuat presentasi terasa hidup.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#profil">Lihat Biodata</a>
+            <a class="button ghost" href="#proyek">Eksplor Proyek</a>
+          </div>
+
+          <div class="hero-stats">
+            <article>
+              <strong data-counter="12">0</strong>
+              <span>Modul Keahlian</span>
+            </article>
+            <article>
+              <strong data-counter="24">0</strong>
+              <span>Simulasi Proyek</span>
+            </article>
+            <article>
+              <strong data-counter="96">0</strong>
+              <span>Jam Eksperimen</span>
+            </article>
+          </div>
+
+          <div class="live-strip">
+            <span class="status-dot"></span>
+            <span>RPL Engine Online</span>
+            <strong id="live-clock">00:00:00</strong>
+          </div>
+
+          <div class="hero-marquee">
+            <div class="marquee-track">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>UI Motion</span>
+              <span>Database</span>
+              <span>System Design</span>
+              <span>Problem Solving</span>
+              <span>Deployment</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>UI Motion</span>
+              <span>Database</span>
+              <span>System Design</span>
+              <span>Problem Solving</span>
+              <span>Deployment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glass-card floating">
+            <div class="card-top">
+              <span class="signal"></span>
+              <span class="signal"></span>
+              <span class="signal"></span>
+            </div>
+            <div class="code-lines">
+              <span>class FutureDeveloper {</span>
+              <span>&nbsp;&nbsp;skill: "Frontend + Backend";</span>
+              <span>&nbsp;&nbsp;mindset: "Problem Solver";</span>
+              <span>&nbsp;&nbsp;focus: "RPL Excellence";</span>
+              <span>}</span>
+            </div>
+          </div>
+
+          <div class="spotlight-card">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+              alt="Laptop dengan kode pemrograman sebagai representasi siswa RPL"
+            />
+            <div class="spotlight-info">
+              <p>Software Engineering Vibes</p>
+              <span>Problem solving, coding, design, deployment</span>
+            </div>
+          </div>
+
+          <div class="hud-card">
+            <p class="eyebrow">Mission Control</p>
+            <h3>Build. Test. Launch.</h3>
+            <div class="hud-bars">
+              <div><span>UI Precision</span><b style="--bar: 94%"></b></div>
+              <div><span>System Logic</span><b style="--bar: 89%"></b></div>
+              <div><span>Deployment Ready</span><b style="--bar: 84%"></b></div>
+            </div>
+          </div>
+
+          <div class="orbit-system" aria-hidden="true">
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="core-node">RPL</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tabs-section panel reveal" id="profil">
+        <div class="section-heading">
+          <p class="eyebrow">Pusat Informasi</p>
+          <h3>Tab Biodata Lengkap</h3>
+        </div>
+
+        <div class="tabs">
+          <div class="tab-buttons" role="tablist" aria-label="Tab biodata RPL">
+            <button class="tab-button active" role="tab" aria-selected="true" data-tab="tab-bio">
+              Biodata
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" data-tab="tab-akademik">
+              Akademik
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" data-tab="tab-karier">
+              Karier
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" data-tab="tab-tools">
+              Tools
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" data-tab="tab-softskill">
+              Soft Skill
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" data-tab="tab-sertifikat">
+              Sertifikat
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <article class="tab-panel active" id="tab-bio" role="tabpanel">
+              <div class="bio-grid">
+                <div class="profile-card shine">
+                  <img
+                    src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80"
+                    alt="Tim developer muda berdiskusi di ruang kerja"
+                  />
+                  <div>
+                    <h4>Profil Siswa RPL</h4>
+                    <p>
+                      Nama: Revan Gunawan Aupa<br />
+                      Jurusan: Rekayasa Perangkat Lunak<br />
+                      Fokus: Web Development, UI/UX, Database, dan Software Testing
+                    </p>
+                  </div>
+                </div>
+                <div class="info-list">
+                  <div><span>Tempat Belajar</span><strong>Lab Komputer Modern</strong></div>
+                  <div><span>Visi</span><strong>Menjadi developer yang kreatif dan adaptif</strong></div>
+                  <div><span>Misi</span><strong>Menciptakan solusi digital yang bermanfaat</strong></div>
+                  <div><span>Minat</span><strong>Frontend, API, UI Motion, Cloud Basics</strong></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="tab-akademik" role="tabpanel">
+              <div class="mini-cards">
+                <article>
+                  <h4>Mata Pelajaran Unggulan</h4>
+                  <p>Pemrograman Web, Basis Data, Pemodelan Perangkat Lunak, dan PKK.</p>
+                </article>
+                <article>
+                  <h4>Pola Belajar</h4>
+                  <p>Teori dipadukan praktik proyek agar terbiasa menyelesaikan masalah nyata.</p>
+                </article>
+                <article>
+                  <h4>Target Akademik</h4>
+                  <p>Membangun portofolio yang layak lomba, magang, dan dunia industri.</p>
+                </article>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="tab-karier" role="tabpanel">
+              <div class="timeline">
+                <div>
+                  <span>01</span>
+                  <h4>Junior Web Developer</h4>
+                  <p>Menguasai HTML, CSS, JavaScript, dan workflow git secara disiplin.</p>
+                </div>
+                <div>
+                  <span>02</span>
+                  <h4>Full Stack Explorer</h4>
+                  <p>Mengembangkan aplikasi dengan frontend modern, backend API, dan database.</p>
+                </div>
+                <div>
+                  <span>03</span>
+                  <h4>Tech Problem Solver</h4>
+                  <p>Siap terjun ke startup, software house, atau membangun produk sendiri.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="tab-tools" role="tabpanel">
+              <div class="tool-cloud">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Figma</span>
+                <span>Git</span>
+                <span>VS Code</span>
+                <span>Laravel</span>
+                <span>Node.js</span>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="tab-softskill" role="tabpanel">
+              <div class="soft-grid">
+                <article>
+                  <h4>Komunikasi</h4>
+                  <p>Mampu mempresentasikan ide aplikasi secara jelas dan meyakinkan.</p>
+                </article>
+                <article>
+                  <h4>Kolaborasi</h4>
+                  <p>Terbiasa berbagi tugas dalam tim desain, coding, testing, dan dokumentasi.</p>
+                </article>
+                <article>
+                  <h4>Disiplin</h4>
+                  <p>Terlatih memenuhi deadline proyek dan menjaga kualitas hasil akhir.</p>
+                </article>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="tab-sertifikat" role="tabpanel">
+              <div class="certificate-list">
+                <div>
+                  <h4>Workshop UI/UX</h4>
+                  <p>Membuat prototype interaktif dan user flow yang efektif.</p>
+                </div>
+                <div>
+                  <h4>Pelatihan Web Dasar</h4>
+                  <p>Struktur website, styling modern, dan interaksi JavaScript.</p>
+                </div>
+                <div>
+                  <h4>Database Practice</h4>
+                  <p>Desain tabel, relasi, query CRUD, dan optimasi dasar.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-showcase reveal" id="kompetensi">
+        <div class="section-heading">
+          <p class="eyebrow">Skill Matrix</p>
+          <h3>Kompetensi Inti RPL</h3>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="ring" style="--value: 92">
+              <span>92%</span>
+            </div>
+            <h4>Frontend Interface</h4>
+            <p>Membangun antarmuka responsif, estetik, dan ramah pengguna.</p>
+          </article>
+          <article class="skill-card">
+            <div class="ring" style="--value: 86">
+              <span>86%</span>
+            </div>
+            <h4>Logic & Algorithm</h4>
+            <p>Mengubah kebutuhan menjadi alur program yang efisien.</p>
+          </article>
+          <article class="skill-card">
+            <div class="ring" style="--value: 88">
+              <span>88%</span>
+            </div>
+            <h4>Database Design</h4>
+            <p>Menyusun data terstruktur untuk aplikasi yang stabil dan cepat.</p>
+          </article>
+          <article class="skill-card">
+            <div class="ring" style="--value: 84">
+              <span>84%</span>
+            </div>
+            <h4>Deployment Mindset</h4>
+            <p>Memahami alur publish, testing, versioning, dan maintenance.</p>
+          </article>
+        </div>
+
+        <div class="feature-strip">
+          <div>
+            <strong>UI/UX Thinking</strong>
+            <span>Tampilan tidak hanya bagus, tapi juga nyaman digunakan.</span>
+          </div>
+          <div>
+            <strong>Clean Code Habit</strong>
+            <span>Struktur rapi, mudah dibaca, dan mudah dikembangkan.</span>
+          </div>
+          <div>
+            <strong>Project Collaboration</strong>
+            <span>Terbiasa bekerja dengan timeline, revisi, dan evaluasi.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects panel reveal" id="proyek">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio Lab</p>
+          <h3>Simulasi Proyek Unggulan</h3>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card tilt-card">
+            <span class="badge">Aplikasi Sekolah</span>
+            <h4>Sistem Absensi Digital</h4>
+            <p>Mengelola presensi, rekap data, laporan, dan otorisasi pengguna.</p>
+          </article>
+          <article class="project-card tilt-card">
+            <span class="badge">Bisnis UMKM</span>
+            <h4>Website Toko Online</h4>
+            <p>Landing page produk, katalog, checkout simulasi, dan dashboard admin.</p>
+          </article>
+          <article class="project-card tilt-card">
+            <span class="badge">Produktivitas</span>
+            <h4>Task Manager Team</h4>
+            <p>Monitoring progres tugas, prioritas pekerjaan, dan deadline proyek.</p>
+          </article>
+          <article class="project-card tilt-card">
+            <span class="badge">Public Service</span>
+            <h4>Portal Informasi Masyarakat</h4>
+            <p>Publikasi berita, formulir online, dan manajemen data layanan.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="terminal-section panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Dev Console</p>
+          <h3>Terminal Aktivitas RPL</h3>
+        </div>
+
+        <div class="terminal-grid">
+          <div class="terminal-window">
+            <div class="terminal-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+              <p><span>$</span> init student-profile --track elite</p>
+              <p><span>></span> loading frontend modules...</p>
+              <p><span>></span> connecting design system...</p>
+              <p><span>></span> syncing database mindset...</p>
+              <p><span>></span> preparing deployment confidence...</p>
+            </div>
+          </div>
+          <div class="command-panel">
+            <article>
+              <strong>Focus Mode</strong>
+              <span>Deep work untuk coding, debugging, dan polishing interface.</span>
+            </article>
+            <article>
+              <strong>Testing Mode</strong>
+              <span>Validasi alur aplikasi, cek UI, dan audit logika sistem.</span>
+            </article>
+            <article>
+              <strong>Launch Mode</strong>
+              <span>Finalisasi proyek agar siap demo, lomba, atau portofolio.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="control-section panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Command Center</p>
+          <h3>Panel Kendali Final Boss</h3>
+        </div>
+
+        <div class="control-grid">
+          <article class="control-card">
+            <span class="control-label">Execution Rate</span>
+            <strong>99.2%</strong>
+            <p>Kecepatan menyusun tampilan, alur, dan fitur ke level presentasi tinggi.</p>
+          </article>
+          <article class="control-card">
+            <span class="control-label">Creative Impact</span>
+            <strong>Ultra Mode</strong>
+            <p>Desain diarahkan ke nuansa produk teknologi premium, bukan template biasa.</p>
+          </article>
+          <article class="control-card">
+            <span class="control-label">Visual Pressure</span>
+            <strong>Maximum</strong>
+            <p>Animasi, cahaya, dan kedalaman layer dibuat se-intens mungkin tapi tetap rapi.</p>
+          </article>
+          <article class="control-card">
+            <span class="control-label">Presentasi Value</span>
+            <strong>Top Tier</strong>
+            <p>Cocok untuk demo kelas, profil jurusan, atau landing page portofolio brutal.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery panel reveal" id="galeri">
+        <div class="section-heading">
+          <p class="eyebrow">Visual Technology</p>
+          <h3>Galeri Inspirasi RPL</h3>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item large">
+            <img
+              src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80"
+              alt="Pemrograman dan tampilan kode pada monitor"
+            />
+            <figcaption>Code architecture and structured development workflow.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+              alt="Diskusi tim software developer"
+            />
+            <figcaption>Kolaborasi tim untuk menyusun solusi digital.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+              alt="Setup laptop pemrograman"
+            />
+            <figcaption>Workspace profesional untuk belajar dan bereksperimen.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="radar-section panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Technology Radar</p>
+          <h3>Peta Kekuatan Developer RPL</h3>
+        </div>
+
+        <div class="radar-layout">
+          <div class="radar">
+            <div class="radar-ring ring-1"></div>
+            <div class="radar-ring ring-2"></div>
+            <div class="radar-ring ring-3"></div>
+            <div class="radar-sweep"></div>
+            <span class="radar-point point-1">HTML</span>
+            <span class="radar-point point-2">UI/UX</span>
+            <span class="radar-point point-3">API</span>
+            <span class="radar-point point-4">DB</span>
+            <span class="radar-point point-5">Testing</span>
+          </div>
+
+          <div class="radar-notes">
+            <article>
+              <h4>Frontend Attack</h4>
+              <p>Visual kuat, struktur rapi, responsif, dan penuh interaksi modern.</p>
+            </article>
+            <article>
+              <h4>Backend Stability</h4>
+              <p>Siap menghubungkan form, database, autentikasi, dan API sederhana.</p>
+            </article>
+            <article>
+              <h4>Design Awareness</h4>
+              <p>Tidak hanya menulis kode, tetapi juga memikirkan pengalaman pengguna.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="media-section panel reveal" id="media">
+        <div class="section-heading">
+          <p class="eyebrow">Multimedia</p>
+          <h3>Video dan Insight RPL</h3>
+        </div>
+
+        <div class="media-grid">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/3JluqTojuME?si=AYL2dFopWwZZ7DtM"
+              title="Software engineering video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insight-card">
+            <h4>Mengapa RPL Itu Keren?</h4>
+            <p>
+              Karena RPL menggabungkan logika, desain, analisis, komunikasi, dan kreativitas
+              menjadi solusi nyata. Jurusan ini menyiapkan siswa untuk menciptakan aplikasi yang
+              berguna sekaligus siap menghadapi kebutuhan industri digital.
+            </p>
+            <ul>
+              <li>Belajar coding dari dasar sampai implementasi proyek</li>
+              <li>Terbiasa menggunakan tools industri modern</li>
+              <li>Mengasah pola pikir analitis dan inovatif</li>
+              <li>Membuka peluang karier luas di dunia teknologi</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="achievement-section panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Achievement Wall</p>
+          <h3>Pencapaian dan Milestone</h3>
+        </div>
+
+        <div class="achievement-grid">
+          <article>
+            <strong data-counter="18">0</strong>
+            <span>UI Screen Concepts</span>
+          </article>
+          <article>
+            <strong data-counter="9">0</strong>
+            <span>Prototype Projects</span>
+          </article>
+          <article>
+            <strong data-counter="32">0</strong>
+            <span>Debug Sessions Won</span>
+          </article>
+          <article>
+            <strong data-counter="7">0</strong>
+            <span>Presentation Moments</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="battle-section panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Battle Mode</p>
+          <h3>Kenapa Versi Ini Terasa Sadis</h3>
+        </div>
+
+        <div class="battle-grid">
+          <article>
+            <h4>Visual Impact</h4>
+            <p>Background aktif, glow bergerak, kartu berlapis, dan headline glitch yang menonjol.</p>
+          </article>
+          <article>
+            <h4>Content Density</h4>
+            <p>Tab banyak, section banyak, statistik, media, galeri, terminal, radar, dan insight.</p>
+          </article>
+          <article>
+            <h4>Interaction Level</h4>
+            <p>Counter, reveal, tilt, slider, preloader, progress scroll, clock live, dan particle field.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Dashboard Ringkas</p>
+          <h3>Ekosistem Belajar RPL</h3>
+        </div>
+
+        <div class="dashboard-grid">
+          <article>
+            <h4>Daily Routine</h4>
+            <p>Briefing, coding practice, debugging, testing, presentasi, evaluasi.</p>
+          </article>
+          <article>
+            <h4>System Mindset</h4>
+            <p>Analisis kebutuhan, desain, pengembangan, pengujian, deployment.</p>
+          </article>
+          <article>
+            <h4>Career Potential</h4>
+            <p>Web Developer, QA Tester, UI Designer, Backend Engineer, IT Support.</p>
+          </article>
+          <article>
+            <h4>Creative Edge</h4>
+            <p>Menggabungkan estetika visual dengan fungsi sistem yang efektif.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonial-section panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Impression Feed</p>
+          <h3>Kesan Profesional</h3>
+        </div>
+
+        <div class="testimonial-slider">
+          <article class="testimonial-card active">
+            <p>
+              “Tampilannya terasa seperti website startup teknologi premium, tapi isinya tetap
+              fokus pada identitas dan kekuatan siswa RPL.”
+            </p>
+            <strong>Reviewer Akademik</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              “Visual, struktur, dan animasinya berhasil menunjukkan bahwa RPL bukan sekadar
+              jurusan coding, tapi dunia solusi digital.”
+            </p>
+            <strong>Mentor Project Lab</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              “Web ini cocok dijadikan bahan presentasi, portofolio kelas, atau landing page profil
+              jurusan yang benar-benar menjual.”
+            </p>
+            <strong>Creative Tech Coach</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq panel reveal">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h3>Pertanyaan yang Sering Muncul</h3>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Apa itu RPL?</summary>
+            <p>RPL adalah jurusan yang berfokus pada pembuatan, pengujian, dan pengembangan perangkat lunak.</p>
+          </details>
+          <details>
+            <summary>Apakah RPL hanya belajar coding?</summary>
+            <p>Tidak. RPL juga mempelajari desain, analisis sistem, database, testing, dan kerja tim.</p>
+          </details>
+          <details>
+            <summary>Kenapa portofolio penting?</summary>
+            <p>Karena portofolio menunjukkan kemampuan nyata dan menjadi nilai tambah untuk lomba, magang, atau kerja.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact panel reveal" id="kontak">
+        <div class="section-heading">
+          <p class="eyebrow">Connect</p>
+          <h3>Kontak dan Identitas</h3>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h4>Biodata Singkat</h4>
+            <p>Siswa RPL yang antusias mengembangkan website, aplikasi, dan solusi digital modern.</p>
+            <div class="contact-items">
+              <span>Email: rpl.elite@school.dev</span>
+              <span>Instagram: @rpl.futuredev</span>
+              <span>GitHub: github.com/rpl-elite</span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Nama" />
+            <input type="email" placeholder="Email" />
+            <textarea rows="4" placeholder="Tulis pesan atau kesan tentang web ini"></textarea>
+            <button type="button" class="button primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Crafted for Rekayasa Perangkat Lunak. Clean code, sharp visuals, future-ready mindset.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
